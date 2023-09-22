@@ -11,7 +11,7 @@ Feature:Automation Rest Api on restful-api-dev
     And I perform DELETE on objects resource
     Then response status code is 200
 
-  Scenario Outline: verify status code and response time and validate Schema for Get all
+  Scenario Outline: verify status code and response time and validate Schema for GET all
     When I perform GET on objects resource
     Then response status code is <statusCode>
     And  Verify response time <ResponseTime>
@@ -20,11 +20,17 @@ Feature:Automation Rest Api on restful-api-dev
       | statusCode | ResponseTime |
       | 200        | 1500         |
 
-  Scenario:  verify status code for invalid Resource
+  Scenario: verify status code for invalid Resource
     When I perform GET on object resource
     Then response status code is 404
 
+  Scenario: verify GET an Object
+    When I perform GET on objects/6 resource
+    Then response status code is 200
 
+  Scenario: verify GET an Object for invalid ID
+    When I perform GET on objects/976997 resource
+    Then response status code is 404
 
 
 

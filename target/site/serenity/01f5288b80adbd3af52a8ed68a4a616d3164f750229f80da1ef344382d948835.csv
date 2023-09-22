@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Automation Rest Api on restful-api-dev","Create Return and Delete the new product","SUCCESS","2023-09-22T11:00:38.83088+01:00[Europe/London]","0.0","3.01"
+"Automation Rest Api on restful-api-dev","verify status code and response time and validate Schema for Get all","SUCCESS","2023-09-22T11:00:41.852284+01:00[Europe/London]","0.0","0.75"
+"Automation Rest Api on restful-api-dev","verify status code for invalid Resource","SUCCESS","2023-09-22T11:00:42.609319+01:00[Europe/London]","0.0","0.45"

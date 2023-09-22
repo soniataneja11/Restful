@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Welcome8Element"
+  },
+  "definitions": {
+    "Welcome8Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Data"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "id",
+        "name"
+      ],
+      "title": "Welcome8Element"
+    },
+    "Data": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "capacity": {
+          "type": "string"
+        },
+        "capacity GB": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "number"
+        },
+        "generation": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "CPU model": {
+          "type": "string"
+        },
+        "Hard disk size": {
+          "type": "string"
+        },
+        "Strap Colour": {
+          "type": "string"
+        },
+        "Case Size": {
+          "type": "string"
+        },
+        "Color": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Capacity": {
+          "type": "string"
+        },
+        "Screen size": {
+          "type": "number"
+        },
+        "Generation": {
+          "type": "string"
+        },
+        "Price": {
+          "type": "string"
+        }
+      },
+      "title": "Data"
+    }
+  }
+}
